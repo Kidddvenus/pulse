@@ -139,16 +139,29 @@ shared_preferences: ^2.5.4
 
 ---
 
-## 📱 Screens
+## 📱 Screenshots
 
-| Screen       | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| **Login**    | Email/password sign-in or biometric quick login          |
-| **Sign Up**  | Registration with name, email, reg number, course        |
+<p align="center">
+  <img src="screenshots/login_screen.jpeg" alt="Login Screen" width="200"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/attendance_screen.jpeg" alt="Attendance Screen" width="200"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/reports_screen.jpeg" alt="Reports Screen" width="200"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/units_screen.jpeg" alt="Units Screen" width="200"/>
+  &nbsp;&nbsp;
+  <img src="screenshots/profile_screen.jpeg" alt="Profile Screen" width="200"/>
+</p>
+
+| Screen         | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| **Login**      | Email/password sign-in or biometric quick login        |
 | **Attendance** | GPS location + map + unit selector + biometric verify  |
-| **Reports**  | Attendance log history with analytics                    |
-| **Units**    | Register and view academic units                         |
-| **Profile**  | View personal details and avatar                         |
+| **Reports**    | Attendance log history with analytics                  |
+| **Units**      | Register and view academic units                       |
+| **Profile**    | View personal details and avatar                       |
 
 ---
 

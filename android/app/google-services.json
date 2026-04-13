@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545995255567",
+    "project_id": "attendance-pulse",
+    "storage_bucket": "attendance-pulse.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545995255567:android:62f401ad6e33f19c03d87a",
+        "android_client_info": {
+          "package_name": "com.example.attendance_pulse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvna4N07hpstSsuwxqh2zz379-Ks4LDMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

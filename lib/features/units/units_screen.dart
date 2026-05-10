@@ -147,13 +147,19 @@ class _UnitsScreenState extends State<UnitsScreen> {
   }
 
   Widget _buildUnitCard(Map<String, dynamic> data) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final textPrimary = isDark ? AppColors.textPrimaryDark : AppColors.textPrimaryLight;
+    final textSecondary = isDark ? AppColors.textSecondaryDark : AppColors.textSecondaryLight;
+    final cardBg = isDark ? AppColors.glassBgDark : AppColors.inputBgLight;
+    final border = isDark ? AppColors.glassBorderDark : AppColors.glassBorderLight;
+
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Theme.of(context).inputDecorationTheme.fillColor,
+        color: cardBg,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.glassBorderLight),
+        border: Border.all(color: border),
       ),
       child: Row(
         children: [
@@ -161,7 +167,7 @@ class _UnitsScreenState extends State<UnitsScreen> {
             width: 48,
             height: 48,
             decoration: BoxDecoration(
-              color: AppColors.primary.withOpacity(0.1),
+              color: AppColors.primary.withOpacity(0.12),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Icon(Icons.menu_book, color: AppColors.primary),
@@ -173,14 +179,20 @@ class _UnitsScreenState extends State<UnitsScreen> {
               children: [
                 Text(
                   data['unitCode'] ?? '',
-                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    color: textPrimary,
+                    decoration: TextDecoration.none,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
                   data['unitName'] ?? '',
                   style: TextStyle(
-                    color: Theme.of(context).colorScheme.surfaceContainerHighest,
+                    color: textSecondary,
                     fontSize: 14,
+                    decoration: TextDecoration.none,
                   ),
                 ),
               ],
